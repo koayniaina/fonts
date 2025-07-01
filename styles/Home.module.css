@@ -1,0 +1,24 @@
+.logo span{
+    color: rgb(15, 15, 228);
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.header{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlink ul{
+    display: flex;
+    gap: 1.6rem;
+}
+
+.hamburger{
+    display: none;
+}
