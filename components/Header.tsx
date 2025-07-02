@@ -21,35 +21,23 @@ export default function Header() {
         <div className={styles.logo}>
           <p><span>iTech</span>Shop</p>
         </div>
-        <div className={styles.navlink}>
-          <ul>
-            <li>
-              <Link href='home'>Home</Link>
-            </li>
-            <li>
-              <Link href='home'>Store</Link>
-            </li>
-             <li>
-              <Link href='home'>Blog</Link>
-            </li>
-            <li>
-              <Link href='home'>Contact</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="icons">
-          <button>
+        <main className={styles.navlink}>
+          
+          
+        </main>
+        <main className="icons">
+          <section>
             <span className="material-symbols-outlined">search</span>
-          </button>
-            <button className='merianes'>
+          </section>
+          <section className='merianes'>
             <span className="material-symbols-outlined">shopping_cart</span>
-
             <div className="counts">
               <p>0</p>
             </div>
-          </button>
-        </div>
+          </section>
+        </main>
       </header>
+      
     </div>
   )
 }
