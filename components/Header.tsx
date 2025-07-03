@@ -1,35 +1,33 @@
-import Link from 'next/link'
-import React from 'react'
-import styles from '@/styles/Home.module.css'
+import Link from "next/link";
+import React from "react";
+import styles from "@/styles/Home.module.css";
+import Navbar from '../components/Navbar';
 
 export default function Header() {
   return (
-    <div>
-      <main className='bg-gray-900 p-2 text-blue-50 flex justify-between  px-6 gap-4'>
-          <div className="span">
-            <p>MDG</p>
-          </div>
-          <div className="contact">
-            <Link href='register'>Create an acount</Link> |
-            <Link href='login'>Sign in</Link>
-          </div>
-      </main>
+    <div className={styles.head}>
       <header className={styles.header}>
-        <div className={styles.hamburger}>
-             <span className="material-symbols-outlined">menu</span>
-        </div>
         <div className={styles.logo}>
-          <p><span>iTech</span>Shop</p>
+          <section className="flex justify-center items-center gap-2">
+            <span className="material-symbols-outlined cursor-pointer">
+              menu
+            </span>
+            <p>
+              <span className="text-blue-500">iTech</span>Shop
+            </p>
+          </section>
         </div>
         <main className={styles.navlink}>
-          
-          
+          <h2>Hello Nav Link</h2>
         </main>
         <main className="icons">
           <section>
             <span className="material-symbols-outlined">search</span>
           </section>
-          <section className='merianes'>
+          <section>
+            <Link  className="material-symbols-outlined" href={"/login"}>person</Link>
+          </section>
+          <section className="merianes">
             <span className="material-symbols-outlined">shopping_cart</span>
             <div className="counts">
               <p>0</p>
@@ -37,7 +35,7 @@ export default function Header() {
           </section>
         </main>
       </header>
-      
+     
     </div>
-  )
+  );
 }

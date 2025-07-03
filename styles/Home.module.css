@@ -1,24 +1,48 @@
-.logo span{
-    color: rgb(15, 15, 228);
+.logo main {
+  color: rgb(25, 132, 219);
 }
 
-.logo{
-    font-weight: bold;
-    font-size: 1.1rem;
+.logo {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: rgba(66, 66, 66, 0.938);
+  position: relative;
+  z-index: 3;
 }
 
-.header{
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+.head {
+  background-color: antiquewhite;
+  min-height: 100vh;
 }
 
-.navlink ul{
-    display: flex;
-    gap: 1.6rem;
+.header {
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+}
+.navlink{
+  position: fixed;
+  top:  0;
+  left: 0;
+  display: none;
+  transition: .5s;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  max-width: 400px;
+  z-index: 2;
+  box-shadow: 0 3px 12px rgb(56, 56, 56);
 }
 
-.hamburger{
-    display: none;
+.navlink h2{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 25vh;
+  padding: 1.3rem;
 }
