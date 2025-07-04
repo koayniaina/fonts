@@ -1,14 +1,29 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "@/styles/Home.module.css";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
 
   const handleclick = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    function handleClickOutside(event: { target: any }) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef]);
+
   return (
     <main>
       <div className={styles.logo}>
@@ -24,17 +39,19 @@ export default function Header() {
           </p>
         </section>
       </div>
-      <div className={`${styles.navLinks} ${isOpen ? styles.active : ""}`}>
-        {/* <span id="home" className="cursor-pointer" onClick={handleclick}>
-          Home
-        </span>
-        <span id="about" className="cursor-pointer" onClick={handleclick}>
-          Home
-        </span>
-        <span id="contact" className="cursor-pointer" onClick={handleclick}>
-          Home
-        </span> */}
-      </div>
+      <main ref={menuRef}>
+        <div className={`${styles.navLinks} ${isOpen ? styles.active : ""}`}>
+          <span id="home" className="cursor-pointer" onClick={handleclick}>
+            Home
+          </span>
+          <span id="about" className="cursor-pointer" onClick={handleclick}>
+            Home
+          </span>
+          <span id="contact" className="cursor-pointer" onClick={handleclick}>
+            Home
+          </span>
+        </div>
+      </main>
     </main>
   );
 }
