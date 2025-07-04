@@ -47,10 +47,10 @@
   padding: 1.3rem;
 }
 
-.navmenu{
+.navbar{
   position: fixed;
   top:  0;
-  left: -200px;
+  left: -100%;
   border-radius: 0 0 0 10px;
   transition: .8s;
   height: 100vh;
@@ -59,9 +59,8 @@
   max-width: 200px;
   z-index: 2;
   box-shadow: 0 3px 12px rgb(56, 56, 56);
-
-  &.expanded{
-    left: 0;
-  }
 }
 
+.navmenu{
+  left: 0;
+}

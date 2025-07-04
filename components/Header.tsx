@@ -26,7 +26,7 @@ export default function Header() {
           </section>
         </div>
         {isOpen ? (
-          <nav className={`${styles.navmenu} ${styles.expanded}`}>
+          <nav className={`${styles.navbar} ${isOpen ? styles.navmenu : ""}`}>
             <ul>
               <li>
                 <Link href="/">Home</Link>
