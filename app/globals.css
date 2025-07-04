@@ -57,19 +57,3 @@ body{
   align-items: center;
 }
 
-.navmenu{
-  position: fixed;
-  top:  0;
-  left: -100%;
-  transition: .5s;
-  height: 100vh;
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  max-width: 200px;
-  z-index: 2;
-  box-shadow: 0 3px 12px rgb(56, 56, 56);
-}
-
-.navmenu .expended{
-  left: 0;
-}

@@ -46,3 +46,22 @@
   height: 25vh;
   padding: 1.3rem;
 }
+
+.navmenu{
+  position: fixed;
+  top:  0;
+  left: -200px;
+  border-radius: 0 0 0 10px;
+  transition: .8s;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  max-width: 200px;
+  z-index: 2;
+  box-shadow: 0 3px 12px rgb(56, 56, 56);
+
+  &.expanded{
+    left: 0;
+  }
+}
+

@@ -1,15 +1,23 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import styles from "@/styles/Home.module.css";
-import Navbar from '../components/Navbar';
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleclick = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className={styles.head}>
       <header className={styles.header}>
         <div className={styles.logo}>
           <section className="flex justify-center items-center gap-2">
-            <span className="material-symbols-outlined cursor-pointer">
+            <span
+              onClick={handleclick}
+              className="material-symbols-outlined cursor-pointer"
+            >
               menu
             </span>
             <p>
@@ -17,15 +25,29 @@ export default function Header() {
             </p>
           </section>
         </div>
-        <main className={styles.navlink}>
-          <h2>Hello Nav Link</h2>
-        </main>
+        {isOpen ? (
+          <nav className={`${styles.navmenu} ${styles.expanded}`}>
+            <ul>
+              <li>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/about">About</Link>
+              </li>
+              <li>
+                <Link href="/contact">Contact</Link>
+              </li>
+            </ul>
+          </nav>
+        ) : null}
         <main className="icons">
           <section>
             <span className="material-symbols-outlined">search</span>
           </section>
           <section>
-            <Link  className="material-symbols-outlined" href={"/login"}>person</Link>
+            <Link className="material-symbols-outlined" href={"/login"}>
+              person
+            </Link>
           </section>
           <section className="merianes">
             <span className="material-symbols-outlined">shopping_cart</span>
@@ -35,7 +57,6 @@ export default function Header() {
           </section>
         </main>
       </header>
-     
     </div>
   );
 }
