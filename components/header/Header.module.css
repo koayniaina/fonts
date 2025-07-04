@@ -1,0 +1,97 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+}
+
+.menuNav {
+  display: flex;
+  gap: 1.4rem;
+  color: rgba(32, 32, 32, 0.904);
+  align-items: center;
+  font-weight: 500;
+  font-size: .9rem;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: none;
+    color: rgba(32, 32, 32, 0.904);
+  }
+}
+
+.icons {
+  display: flex;
+  position: relative;
+  gap: 1rem;
+  font-size: 1.2rem;
+
+  .icon {
+    color: rgba(32, 32, 32, 0.904);
+    cursor: pointer;
+  }
+}
+
+.chart {
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.counts {
+  position: absolute;
+  top: -1.2rem;
+  left: 0.25rem;
+  background-color: rgb(20, 100, 165);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 0.8rem;
+  color: whitesmoke;
+  padding: 0.15rem 0.3rem;
+}
+
+.hamburger {
+  margin-top: -0.9rem;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .logo {
+  position: relative;
+  z-index: 3;
+  color: rgb(61, 61, 61);
+}
+
+  .menuNav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 12px;
+    height: 100vh;
+    transition: .4s;
+    left: -100%;
+    width: 100%;
+    max-width: 200px;
+    padding: 5rem 0;
+    right: 0;
+  }
+
+  .menuNav.active{
+    left: 0;
+  }
+
+}
