@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-body {
-  text-decoration: none;
-}
 
 .text-md {
   font-size: 0.5rem;
