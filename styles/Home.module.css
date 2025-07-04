@@ -25,34 +25,16 @@
   align-items: center;
   background-color: antiquewhite;
 }
-.navlink{
+
+
+.navLinks{
   position: fixed;
   top:  0;
-  left: 0;
-  display: none;
-  transition: .5s;
-  height: 100vh;
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  max-width: 400px;
-  z-index: 2;
-  box-shadow: 0 3px 12px rgb(56, 56, 56);
-}
-
-.navlink h2{
   display: flex;
-  justify-content: start;
-  align-items: center;
-  height: 25vh;
-  padding: 1.3rem;
-}
-
-.navbar{
-  position: fixed;
-  top:  0;
   left: -100%;
+  flex-direction: column;
   border-radius: 0 0 0 10px;
-  transition: .8s;
+  transition: .3s;
   height: 100vh;
   background-color: rgb(255, 255, 255);
   width: 100%;
@@ -61,6 +43,6 @@
   box-shadow: 0 3px 12px rgb(56, 56, 56);
 }
 
-.navmenu{
+.navLinks.active{
   left: 0;
 }

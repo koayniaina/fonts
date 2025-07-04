@@ -1,7 +1,9 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Matangi:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
 @import "tailwindcss";
 
 body{
   text-decoration: none;
+  /* font-family: Montserrat; */
   
 }
 
