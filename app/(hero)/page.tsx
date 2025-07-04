@@ -1,5 +1,5 @@
 import mac from '@/public/welcome_hero_endframe__c61x1mv7kgqe_large.jpg'
-import macs from '@/public/Mysz-Gamingowa-SteelSeries-Rival-600-12000DPI-RGB-Producent-SteelSeries.jpeg'
+import souri from '@/public/Mysz-Gamingowa-SteelSeries-Rival-600-12000DPI-RGB-Producent-SteelSeries.jpeg'
 import phone from '@/public/APPLE-IPHONE-13-MINI-256GB-KOLORY-GRATISY-PREMIUM-Pamiec-RAM-4-GB.jpeg'
 import Image from 'next/image';
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
             </div>
           </div>
           <div className="carousel-item">
-            <Image src={macs} alt={'mac'} />
+            <Image src={souri} alt={'mac'} />
             <div className="carousel-caption">
               <h5>Third slide label</h5>
             </div>
