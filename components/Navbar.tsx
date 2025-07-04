@@ -12,15 +12,15 @@ export default function Header() {
   };
 
   useEffect(() => {
-    function handleClickOutside(event: { target: any }) {
+    function ClickOutside(event: { target: any }) {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         setIsOpen(false);
       }
     }
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("mousedown", ClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("mousedown", ClickOutside);
     };
   }, [menuRef]);
 
