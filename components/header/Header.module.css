@@ -47,14 +47,16 @@
 .counts {
   position: absolute;
   top: -1.2rem;
-  left: 0.25rem;
-  background-color: rgb(20, 100, 165);
+  left: .4rem;
   border-radius: 50%;
+  background-color: rgb(20, 100, 165);
   width: 24px;
+  text-align: center;
   height: 24px;
   font-size: 0.8rem;
   color: whitesmoke;
-  padding: 0.15rem 0.3rem;
+  padding: 0.15rem 0.3rem; 
+
 }
 
 .hamburger {
@@ -70,7 +72,7 @@
 
   .logo {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   color: rgb(61, 61, 61);
 }
 
@@ -78,20 +80,21 @@
     position: fixed;
     display: flex;
     flex-direction: column;
-    top: 0;
+    /* top: -100%; */
     background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 12px;
     height: 100vh;
     transition: .4s;
-    left: -100%;
+    left: 0;
     width: 100%;
     max-width: 200px;
+    z-index: 3;
     padding: 5rem 0;
-    right: 0;
+    bottom: -100vh;
   }
 
   .menuNav.active{
-    left: 0;
+    bottom: 0;
   }
 
 }

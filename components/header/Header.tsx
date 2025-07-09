@@ -3,7 +3,8 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import styles from "@/components/header/Header.module.css";
-import { CiMenuBurger, CiSearch, CiShoppingCart, CiUser } from "react-icons/ci";
+import {CiSearch, CiShoppingCart, CiUser } from "react-icons/ci";
+import { LuMenu } from "react-icons/lu";
 
 export default function Navbar() {
   const [isOpen , setOpen] = useState(false)
@@ -17,7 +18,7 @@ export default function Navbar() {
         <section>
           <div className={styles.logo}>
             <span onClick={handleclick} className={styles.hamburger}>
-              <CiMenuBurger/>
+             <LuMenu />
             </span>
             <span className="text-xl font-medium">
               iTech<span className="text-blue-600">Store</span>
@@ -47,7 +48,7 @@ export default function Navbar() {
 
           <Link className={styles.chart} href="shop">
             <CiShoppingCart className={styles.icon} />
-            <p className={styles.counts}>10</p>
+            <p className={styles.counts}>0</p>
           </Link>
         </section>
       </main>
