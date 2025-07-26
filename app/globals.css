@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 .text-md {
   font-size: 0.5rem;
   text-transform: uppercase;
@@ -14,3 +13,18 @@
 .dropdown .dropdown-menu {
   display: none;
 }
+
+.carousel-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  width: 100%;
+ align-items: center;
+  /* height: 80vh; */
+  z-index: -1;
+}
+/* 
+.carousel-item img{
+  height: 90vh;
+} */
