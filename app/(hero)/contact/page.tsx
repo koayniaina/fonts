@@ -1,7 +1,10 @@
+import Contats from '@/components/contact/Contats'
 import React from 'react'
 
-export default function Contact() {
+export default function Contacts() {
   return (
-    <div>Contact</div>
+    <div>
+      <Contats/>
+    </div>
   )
 }

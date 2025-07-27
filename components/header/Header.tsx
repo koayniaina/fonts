@@ -9,7 +9,7 @@ import { useRef, useEffect } from "react";
 
 export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
-  const menuRef = useRef(null);
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   const handleclick = () => {
     setOpen(!isOpen);
@@ -45,19 +45,19 @@ export default function Navbar() {
           >
             {/* <div  className={styles.menuNav}> */}
 
-            <Link href="/" onClick={handleclick}>
+            <Link href="#home" onClick={handleclick}>
               Home
             </Link>
-            <Link href="/category" onClick={handleclick}>
+            <Link href="#category" onClick={handleclick}>
               Category
             </Link>
-            <Link href="post" onClick={handleclick}>
+            <Link href="#post" onClick={handleclick}>
               Post
             </Link>
-            <Link href="/contact" onClick={handleclick}>
+            <Link href="#contact" onClick={handleclick}>
               Contact
             </Link>
-            <Link href="/marque" onClick={handleclick}>
+            <Link href="#marque" onClick={handleclick}>
               Marques
             </Link>
             {/* </div> */}

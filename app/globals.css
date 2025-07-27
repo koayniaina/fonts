@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 .text-md {
   font-size: 0.5rem;
   text-transform: uppercase;
@@ -18,13 +19,38 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-position: center;
-  width: 100%;
- align-items: center;
-  /* height: 80vh; */
+  width: auto;
   z-index: -1;
 }
-/* 
-.carousel-item img{
-  height: 90vh;
+
+.ciner {
+  height: 430px;
+}
+
+.cimg {
+  height: 100%;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  padding: 0 1rem;
+  display: flex;
+  background-color: rgba(199, 199, 199, 0.521);
+  z-index: 10;
+}
+
+/* .very{
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 } */
