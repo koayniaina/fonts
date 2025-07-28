@@ -23,33 +23,22 @@
 }
 
 .carousel-inner:before {
-  content: '';
-  position: absolute ;
+  content: "";
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.486);
+  background-color: rgba(235, 235, 235, 0.514);
 }
 
 .ciner {
-  height: 430px;
+  height: 500px;
 }
 
 .cimg {
   height: 100%;
-}
-
-.carousel-caption {
-  /* position: fixed; */
-  display: flex;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  z-index: 10;
 }
 
 .cardflex {

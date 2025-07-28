@@ -3,8 +3,16 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+}
+
+.navbar {
   position: sticky;
   top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  /* display: flex; */
 }
 
 .menuNav {
@@ -13,7 +21,7 @@
   color: rgba(32, 32, 32, 0.904);
   align-items: center;
   font-weight: 500;
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
 
   a {
@@ -47,7 +55,7 @@
 .counts {
   position: absolute;
   top: -1.2rem;
-  left: .4rem;
+  left: 0.4rem;
   border-radius: 50%;
   background-color: rgb(28, 135, 223);
   width: 24px;
@@ -55,8 +63,7 @@
   height: 24px;
   font-size: 0.8rem;
   color: whitesmoke;
-  padding: 0.15rem 0.3rem; 
-
+  padding: 0.15rem 0.3rem;
 }
 
 .hamburger {
@@ -71,10 +78,10 @@
   }
 
   .logo {
-  position: relative;
-  z-index: 4;
-  color: rgb(61, 61, 61);
-}
+    position: relative;
+    z-index: 4;
+    color: rgb(61, 61, 61);
+  }
 
   .menuNav {
     position: fixed;
@@ -83,7 +90,7 @@
     background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 12px;
     height: 100vh;
-    transition: .4s;
+    transition: 0.4s;
     left: 0;
     width: 100%;
     max-width: 200px;
@@ -92,8 +99,8 @@
     bottom: -100vh;
   }
 
-  .menuNav.active{
+  .menuNav.active {
     bottom: 0;
   }
-
 }
+

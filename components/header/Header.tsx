@@ -9,6 +9,10 @@ import { useRef, useEffect } from "react";
 
 export default function Navbar() {
   const [isOpen, setOpen] = useState(false);
+  const [isSearch, setSearch] = useState(false);
+  const handleSearch = () => {
+    setSearch(!isSearch);
+  };
   const menuRef = useRef<HTMLDivElement | null>(null);
 
   const handleclick = () => {
@@ -64,8 +68,17 @@ export default function Navbar() {
           </section>
         }
         <section className={styles.icons}>
-          <span>
+          <span onClick={handleSearch} className={styles.searchs}>
             <CiSearch className={styles.icon} />
+            {
+              // <div
+              //   className={`${styles.searchinput} ${
+              //     isSearch ? styles.active : ""
+              //   }`}
+              // >
+              //   <input type="search"  placeholder="Search..." />
+              // </div>
+            }
           </span>
 
           <Link href="login">
