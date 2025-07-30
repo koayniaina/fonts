@@ -23,13 +23,3 @@ model Contact{
   updatedAt DateTime @updatedAt
 }
 
-model User {
-  id        String   @id @default(cuid()) @map("_id")
-  email     String   @unique
-  password  String
-  Name String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-}
-
-  
